@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no"><!--모바일 넓이맞춤-->
+	<title>조직문화결과</title>
+	<link rel="stylesheet" href="font/font.css"><!--폰트css/본고딕-->
+	<link rel="stylesheet" href="cus-css/reset.css"><!--css초기화-->
+	<link rel="stylesheet" href="cus-css/common.css"><!--공통css-->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script><!--제이쿼리-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script><!--차트라이브러리-->
+	<script src="cus-js/chart.js"></script><!--차트js-->
+	<script src="cus-js/script.js"></script><!--공통js-->
+</head>
+<body>
+	<div id="header"></div>
+	<!--내용시작-->
+	<div id="cus-pg" class="cus-report" style="background:#fff">
+		<div class="cus-top_bnr">
+			<div class="cus-wrap">
+				<p>Report</p>
+				<h2>조직문화진단</h2>
+			</div>
+		</div>
+		<div class="cus-company_name">
+			<p>
+				<i>Report</i><strong>ASMLA</strong>
+			</p>
+		</div>
+		<div class="cus-wrap">
+			<!--문화종합-->
+			<div class="cus-synthesis">
+				<h3 class="cus-title"><b class="cus-bg_wrap"><i class="cus-num num1">1</i><span>ASMLA</span> 문화 종합</b></h3>
+				<div class="cus-head01">
+					귀사의 현재 조직문화는 위계지향문화(4.44)가 가장 높게 나타나고 있으며 향후에는 관계지향문화(5.14)가 최우선시 되어야 한다고 인식하고 있습니다.<br>현재의 조직문화와 미래의 조직문화 간 차이(GAP)가 가장 큰 문화는 혁신지향문화(1.3)로 나타났습니다.
+				</div>
+				<div class="cus-row">
+					<div class="cus-fl cus-sz1"><canvas id="chart1" width="1" height="1"></canvas></div>
+					<div class="cus-fl cus-sz2">
+						<ul class="cus-list_txt1">
+							<li>귀사의 현재 조직문화는 과업지향문화(4.44), 위계지향문화(4.44), 관계지향문화(3.95), 혁신지향문화(2.73)의 순으로 높게 나타났습니다.</li>
+							<li>또한 향후 귀사에서 우선시 되어야 할 조직문화는 관계지향문화(5.14), 과업지향문화(4.26), 혁신지향문화(4.03), 위계지향문화(3.36)의 순으로 나타났습니다.</li>
+							<li>현재의 조직문화와 미래의 조직문화 차이를 비교했을 때 혁신지향문화(1.3), 관계지향문화(1.19), 위계지향문화(-1.08), 과업지향문화(-0.18)의 순으로 차이가 크게 나타났습니다.</li>
+							<li>관계지향문화는 현재 수준(3.95)과 미래에 기대하는 수준(5.14)의 차이(1.19)가 매우 크며 향후 조직문화 측면에서 강화될 필요가 있습니다.</li>
+							<li>위계지향문화는 현재 수준(4.44)과 미래에 기대하는 수준(3.36)의 차이(-1.08)가 매우 크며 향후 조직문화 측면에서 완화될 필요가 있습니다.</li>
+							<li>과업지향문화는 현재 수준(4.44)과 미래에 기대하는 수준(4.26)의 차이(-0.18)가 비슷하며 향후에도 조직문화를 지속할 필요가 있습니다.</li>
+							<li>혁신지향문화는 현재 수준(2.73)과 미래에 기대하는 수준(4.03)의 차이(1.3)가 매우 크며 향후 조직문화 측면에서 강화될 필요가 있습니다.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="cus-avr">
+					<h3>문화 유형별 평균값</h3>
+					<table>
+						<thead>
+							<tr>
+								<th>문화유형</th>
+								<th>관계지향</th>
+								<th>위계지향</th>
+								<th>과업지향</th>
+								<th>혁진지향</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>현재상태</th>
+								<td>3.95</td>
+								<td>4.44</td>
+								<td>4.44</td>
+								<td>2.73</td>
+							</tr>
+							<tr>
+								<th>미래상태</th>
+								<td>5.14</td>
+								<td>3.36</td>
+								<td>4.26</td>
+								<td>4.03</td>
+							</tr>
+							<tr class="cus-gap">
+								<th>차이&#40;GAP&#41;</th>
+								<td>1.19</td>
+								<td>-1.08</td>
+								<td>-0.18</td>
+								<td>1.3</td>
+							</tr>
+						</tbody>
+						<tfoot></tfoot>
+					</table>
+					<p class="cus-hp">전혀 그렇지 않다(1) ~ 매우 그렇다(7)</p>
+				</div>
+			</div>
+			<!--//문화종합-->
+			<!--현재문화-->
+			<div class="cus-now">
+				<h3 class="cus-title cus-title2"><b class="cus-bg_wrap"><i class="cus-num num1">2</i><span>ASMLA</span> 현재 문화</b></h3>
+				<div class="cus-head01">
+					SMLA 조직문화 중 가장 높게 나타난 위계지향문화는 관리를 통한 조직의 안정성이 궁극적인 목적입니다.<br>이는 규정, 구조, 관습에 의한 정형화된 기준에 따른 업무수행 및 의사결정을 중시합니다.
+				</div>
+				<div class="cus-row">
+					<div class="cus-fl cus-sz1"><canvas id="chart2" width="1" height="1"></canvas></div>
+					<div class="cus-fl cus-sz2">
+						<ul class="cus-list_txt1">
+							<li>위계지향문화는 정보관리와 문서화 등 체계적인 관리를 통한 원만한 조직은영 측면에서는 강점을 갖고 있습니다.
+							반면, 과도한 위계지향문화는 실속 없는 절차의 양산으로 인해 사소한 일에도 엄격한 관리가 발생할 수 있으므로 규정 만능주의, 토론문화의 부재, 관료주의와 문서주의를 경계할 필요가 있습니다.
+							</li>
+							<li>관계지향문화 및 혁신지향문화는 조직의 자율적 관리와 관련이 있습니다. ASMLA은 자율적 관리 측면에서 관계지향문화와 혁신지향문화가 모두 낮은 수준입니다. 즉, 신뢰·관심·배려·합의에 의한 구성원의 자발적 몰입 및 헌신과, 개성·유연성·도전에 따른 위험 감수를 모두 강조하지 않는 특징이 있습니다.
+							</li>
+							<li>과업지향문화 및 위계지향문화는 조직의 통제적 관리와 관련이 있습니다. ASMLA은 통제적 관리 측면에서 과업지향문화와 위계지향문화가 모두 일반적인 수준입니다. 즉, 목표달성을 위한 구체적 지시와 실행과, 규제·통제·관리감독을 통한 안정성을 모두 강조하는 특징이 있습니다.
+							</li>
+							<li>과업지향문화 및 혁신지향문화는 조직의 외부 지향성과 관련이 있습니다. ASMLA은 외부 지향성 측면에서 과업지향문화는 일반적 수준이고 혁신지향문화는 낮은 수준입니다. 즉, 생산성을 높이기 위한 효율 기반의 경쟁은 강조하지만 외부자원의 적극적 활용 및 변화와 혁신을 통한 성장은 강조하지 않는 특징이 있습니다.
+							</li>
+							<li>관계지향문화 및 위게지향문화는 조직의 내부 지향성과 관련이 있습니다. ASMLA은 내부 지향성 측면에서 관계지향문화는 낮고 위계지향문화는 일반적인 수준입니다. 즉, 인간 중심의 참여·개방을 통한 팀워크 및 인재육성은 강조하지 않지만 문서화와 계량화에 기초한 구조화된 조직관리는 강조하는 특징이 있습니다.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--//현재문화-->
+			<!--변화방향-->
+			<div class="cus-change">
+				<h3 class="cus-title cus-title3"><b class="cus-bg_wrap"><i class="cus-num num1">3</i><span>ASMLA</span> 조직문화의 변화 방향</b></h3>
+				<div class="cus-row">
+					<div class="cus-cul cus-cul1 cus-fl cus-sz1">
+						<h4>강화가 필요한 조직문화</h4>
+						<div class="cus-cont">
+							<ul>
+								<li>자유로운 의견 개진 속에 창의성이 발휘되고 업무가 개선될 수 있는 관리방식을 강화할 필요가 있습니다.</li>
+								<li>리더는 구성원과 소통하고 동반자적 관계에서 지지하는 역할을 강화할 필요가 있습니다.</li>
+								<li>리더는 추진력을 갖고 목표달성을 위한 감독자로서의 역할을 강화할 필요가 있습니다.</li>
+								<li>리더는 위험을 감수하고 기꺼이 변화를 주도하는 혁신가로서의 역할을 강화할 필요가 있습니다.</li>
+								<li>구성원에 대한 신뢰 및 배려를 우선시하는 인간관계에 초점을 둔 전략은 강화할 필요가 있습니다.</li>
+								<li>새로운 자원을 발굴하고 지속가능한 성장을 위한 변화에 초점을 둔 전략은 강화할 필요가 있습니다.</li>
+								<li>서로에 대한 신뢰와 배려가 우선시되는 가족같은 분위기를 강화할 필요가 있습니다.</li>
+								<li>새로운 시도와 도전을 장려하고 변화에 적극적으로 대응하는 역동적인 분위기를 강화할 필요가 있습니다.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="cus-cul cus-cul2 cus-fl cus-sz2">
+						<h4>완화가 필요한 조직문화</h4>
+						<div class="cus-cont">
+							<ul>
+								<li>위계질서를 통한 조직의 안정성을 추구하는 관리방식을 완화할 필요가 있습니다.</li>
+								<li>성과 달성을 위해 생산성 및 효율을 추구하는 관리 방식을 완화할 필요가 있습니다.</li>
+								<li>리더는 업무를 조율하고 조직화하는 조정자로서의 역할을 완화할 필요가 있습니다.</li>
+								<li>내부 체계와 구조의 정비를 통한 조직의 통제 및 유지에 초점을 둔 전략은 완화할 필요가 있습니다.</li>
+								<li>목표 및 성과 달성을 위한 경쟁적 활동에 초점을 둔 전략은 완화할 필요가 있습니다.</li>
+								<li>조직의 성공을 위해 시장 점유율 증가와 새로운 시장 개척을 목적으로 하는 평가는 완화할 필요가 있습니다.</li>
+								<li>공식화된 원칙 및 규정의 준수와 함께 엄격한 통제에 기초한 조직의 결속을 완화할 필요가 있습니다.</li>
+								<!--<li>체계적인 관리감독과 절차 및 규정을 중시하는 분위기를 완화할 필요가 있습니다.</li>-->
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--//변화방향-->
+			<!--세부항목-->
+			<div class="cus-detail">
+				<h3 class="cus-title cus-title4"><b class="cus-bg_wrap"><i class="cus-num num1">4</i><span>ASMLA</span> 세부항목 응답 값</b></h3>
+				<div class="cus-row">
+					<div class="cus-sz1">
+						<canvas id="chart3" width="700" height="500"></canvas>
+					</div>
+					<div class="cus-sz1">
+						<canvas id="chart4" width="700" height="500"></canvas>
+					</div>
+					<div class="cus-sz1">
+						<canvas id="chart5" width="700" height="500"></canvas>
+					</div>
+					<div class="cus-sz1">
+						<canvas id="chart6" width="700" height="500"></canvas>
+					</div>
+				</div>
+			</div>
+			<!--//세부항목-->
+		</div>
+		<script>chartOn();//chart.js</script>
+		<div id="pdfon">pdfdown</div>
+		<script src="bluebird.min.js"></script>
+		<script src="jspdf.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+		<script>
+			$('#pdfon').click(function(){
+				$('.cus-top_bnr').hide(0);
+				$('#cus-pg').css('width',1200);
+				html2canvas($('#cus-pg'), {
+					onrendered: function(canvas) {
+						var imgData = canvas.toDataURL('image/JPEG');
+						var imgWidth = 210;
+						var pageHeight = imgWidth * 1.414;
+						var imgHeight = canvas.height * imgWidth / canvas.width;
+						var heightLeft = imgHeight;
+						var doc = new jsPDF('p', 'mm');
+						var position = 0;
+						doc.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight);
+						heightLeft -= pageHeight;
+						while (heightLeft >= 20) {
+							position = heightLeft - imgHeight;
+							doc.addPage();
+							doc.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight);
+							heightLeft -= pageHeight;
+						}
+						doc.save('result.pdf');
+					}
+				});
+				setTimeout(function(){
+					$('.cus-top_bnr').show(0);
+					$('#cus-pg').css('width','auto');
+				},100)
+			});
+		</script>
+		
+
+		<!--<div id="pdfDownload">click</div>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+		<script>
+		$('#pdfDownload').click(function () {
+			html2canvas(document.body, {
+				onrendered: function(canvas) {
+
+					// 캔버스를 이미지로 변환
+					var imgData = canvas.toDataURL('image/jpeg');
+
+					var imgWidth = 210; // 이미지 가로 길이(mm) A4 기준
+					var pageHeight = imgWidth * 1.414;  // 출력 페이지 세로 길이 계산 A4 기준
+					var imgHeight = canvas.height * imgWidth / canvas.width;
+					var heightLeft = imgHeight;
+
+							var doc = new jsPDF('p', 'mm');
+							var position = 0;
+
+							// 첫 페이지 출력
+							doc.addImage(imgData,'JPEG',0,0);
+							heightLeft -= pageHeight;
+
+							// 한 페이지 이상일 경우 루프 돌면서 출력
+							while (heightLeft >= 20) {
+								position = heightLeft - imgHeight;
+								doc.addPage();
+								doc.addImage(imgData, 'JPEG', 0, 0);
+								heightLeft -= pageHeight;
+							}
+
+							// 파일 저장
+							doc.save('sample_A4.pdf');
+				}
+			});
+		});
+
+		</script>-->
+		
+	</div>
+	<!--내용끝-->
+	<div id="footer"><div class="cus-wrap">Copyright © 2018 Thinknote – Powered by Thinknote</div></div>
+</body>
+</html>

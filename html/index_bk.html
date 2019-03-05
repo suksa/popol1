@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>웹퍼블리셔 :: 조찬형</title>
+    <!--[if lt IE 9]>
+    <script src="/js/html5.js"></script>
+<script src="/js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+    <script type="text/javascript" src="/js/typed.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="/css/reset.css">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+    <link type="text/css" rel="stylesheet" href="/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="/css/common.css">
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div id="typed_wrap">
+                <span id="typed3"></span>
+            </div>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    new Typed('#typed3', {
+                        strings: ['<b style="color:#e1c580">안녕하세요.</b><br><b style="color:#575757">Web Publisher</b> <b style="color:#e1c580">조찬형</b> 입니다.<br>포트폴리오 페이지에 오신걸 <b style="color:#e1c580">환영합니다.</b>'],
+                        startDelay: 500,
+                        typeSpeed: 70,
+                        backSpeed: 20,
+                        fadeOut: true,
+                        smartBackspace: false
+                      });
+                })
+            </script>
+            <div class="head_wrap">
+                <h1 id="logo"><a href="/"><img src="/images/logo.png" alt="웹퍼블리셔 조찬형 포트폴리오"></a></h1>
+                <ul id="nav">
+                    <li><a href="#"><i class="fa fa-folder-o" aria-hidden="true"></i><span>PORTFOLIO<b></b></span></a></li>
+                    <li><a href="#"><i class="fa fa-user-o" aria-hidden="true"></i><span>ABOUT ME<b></b></span></a></li>
+                    <li><a href="#"><i class="fa fa-edit" aria-hidden="true"></i><span>CONTACT<b></b></span></a></li>
+                </ul>
+                <div id="qrCode"><img src="/images/qrcode.png" alt="카카오톡 친구추가 QR코드"></div>
+                <div class="line"></div>
+                <div class="copyR">
+                    <p>copyright ⓒ 조찬형 포트폴리오 2017<br>All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(window).load(function(){
+                
+                setTimeout(function() {
+                    $('#typed_wrap').fadeOut(500)
+                },7000)
+                
+                var $head = $('#header');
+                setTimeout(function() {
+                    $head.addClass('on')
+                },8000)
+            })
+        </script>
+        <div id="section"></div>
+        <div id="footer"></div>
+    </div>
+</body>
+
+</html>
